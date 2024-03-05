@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "New Home Page";
+}
+    <h1 text-align="center">Lista de Pessoas</h1>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Idade</td>
+                <td>CPF</td>
+            </tr>
+        </thead>    
+        
+        <tbody>
+            @foreach(var pessoa in Model)
+            {
+                <tr>
+                    <td>@pessoa.Nome</td>
+                    <td>@pessoa.Idade</td>
+                    <td>@pessoa.Cpf</td>
+                </tr>
+            }    
+        </tbody>
+    </table>
